@@ -1,0 +1,73 @@
+.homepage-spacing-y {
+  margin: 6.8rem 0;
+}
+
+/* Hero section css starts here */
+.homepage__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color-light);
+}
+
+.homepage__hero__content-box__subtitle {
+  font-size: 3rem;
+  font-family: var(--font-style-bold);
+}
+
+.homepage__hero__content-box__social {
+  margin-top: 4rem;
+}
+
+.homepage__hero__content-box__social svg {
+  font-size: 6rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-right: 3rem;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.homepage__hero__content-box__social svg:hover,
+.homepage__hero__content-box__social svg:focus {
+  box-shadow: inset 0 7rem 0 0 #9c9c9c40;
+}
+/* Hero section css ends here */
+
+/* About section css starts here */
+.homepage__about {
+  color: var(--text-color-light);
+  min-height: 65rem;
+}
+/* About section css ends here */
+
+/* Talk section css starts here */
+.homepage__talk {
+  color: var(--text-color-light);
+}
+
+.homepage__talk h1 {
+  text-align: center;
+}
+/* Talk section css ends here */
+
+/* css for media queries */
+@media (max-width: 767px) {
+  .homepage__hero__content-box {
+    width: 100%;
+  }
+
+  .homepage__hero__img-box {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .homepage__hero__content-box {
+    width: 100%;
+  }
+
+  .homepage__hero__img-box {
+    display: none;
+  }
+}

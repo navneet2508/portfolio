@@ -1,0 +1,21 @@
+.section-about {
+  color: var(--text-color-light);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.section-about__img-box img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 50px;
+}
+
+.section-about__content-box {
+  padding-left: 3rem;
+}
+
+.section-about__content-box h1 {
+  color: var(--color-secondary);
+}

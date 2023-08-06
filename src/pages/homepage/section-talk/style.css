@@ -1,0 +1,111 @@
+.section-talk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+}
+
+.section-talk__form {
+  border: 1px solid #464646;
+  padding: 4rem;
+  width: 48%;
+  height: inherit;
+}
+
+.section-talk__form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: var(--font-style-bold);
+  color: var(--color-light);
+  margin-bottom: 3rem;
+}
+
+.section-talk__form input,
+.section-talk__form textarea {
+  font-family: var(--font-style-regular);
+  display: block;
+  width: 100%;
+  background-color: var(--color-primary);
+  border: none;
+  border-bottom: 1px solid #464646;
+  color: var(--color-light);
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  transition: all 0.1s ease-in-out;
+  font-size: 1.6rem;
+}
+
+.section-talk__form input::placeholder,
+.section-talk__form textarea::placeholder {
+  font-size: 1.6rem;
+  color: var(--color-light);
+}
+
+.section-talk__form input:focus,
+.section-talk__form textarea:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.section-talk__form button {
+  margin-top: 2rem;
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-family: var(--font-style-bold);
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-talk button:hover {
+  cursor: pointer;
+  background-color: #cb2e43be;
+}
+
+.section-talk__info {
+  width: 48%;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.section-talk__info__content {
+  padding: 4rem;
+  border: 1px solid #464646;
+}
+
+.section-talk__info__content__icon span {
+  font-size: 1.6rem;
+  font-family: var(--font-style-regular);
+  margin-left: 1rem;
+}
+
+.section-talk__info__content p {
+  font-size: 1.8rem;
+  font-family: var(--font-style-bold);
+  margin-top: 1rem;
+}
+
+/* css media queries */
+@media only screen and (max-width: 1024px) {
+  .section-talk {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .section-talk__form {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+
+  .section-talk__info {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,114 @@
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-primary);
+}
+
+.header__content-box {
+  display: flex;
+  list-style: none;
+}
+
+.header__content-box__element a {
+  text-decoration: none;
+  color: var(--text-color-light);
+  font-size: 1.8rem;
+  font-family: var(--font-style-regular);
+  margin: 0 3rem;
+  padding: 0.5rem 0;
+  transition: all 0.5s ease;
+}
+
+.header__content-box__element a:hover {
+  color: var(--color-secondary);
+}
+
+.header__content-box__element a:active {
+  color: var(--color-secondary);
+}
+
+#header-btn-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    padding: 1.4rem 2%;
+    transition: 0.2s;
+  }
+
+  .header__content-box__element a {
+    padding: 0.5rem 0;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 1090px) {
+  .header__btn-primary {
+    position: absolute;
+    top: -100%;
+  }
+
+  .header__btn-primary.open {
+    position: absolute;
+    top: 60rem;
+    right: 50%;
+    transform: translateX(50%);
+    transition: all 0.5s ease;
+  }
+
+  #header-btn-menu {
+    display: block;
+  }
+
+  .header__content-box {
+    display: none;
+    /* position: absolute;
+    top: 85%;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.5s ease; */
+  }
+
+  .header__content-box__element a {
+    display: block;
+    margin: 4rem 0;
+    transition: all 0.5 ease;
+  }
+
+  .header__content-box__element a:hover {
+    color: var(--color-secondary);
+    transform: translateY(0.5rem);
+  }
+
+  .header__content-box__element a:active {
+    color: var(--color-secondary);
+  }
+
+  .header__content-box.open {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.5s ease;
+    right: 0%;
+  }
+}

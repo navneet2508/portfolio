@@ -83,7 +83,7 @@ const Index = () => {
       { color: '#54faae', percentage: 65, skill: 'Project Management' },
       { color: '#ff8c2f', percentage: 55, skill: 'Problem Solving' },
       { color: '#f1f965', percentage: 85, skill: 'MERN Stack' },
-      { color: '#ff0173', percentage: 70, skill: 'Solana Blockchain' },
+      { color: '#ff0173', percentage: 70, skill: 'Ethereum Blockchain' },
       { color: '#39c4ff', percentage: 75, skill: 'Debugging' },
     ]
     return (
